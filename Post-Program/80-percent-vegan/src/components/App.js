@@ -15,7 +15,16 @@ class App extends Component {
   }
 
   informationDisplay() {
-    
+    switch (this.state.currentSelection) {
+      case 'Meat':
+        return <Meat />
+      case 'Dairy (Milk)':
+        return <Dairy />
+      case 'Cheese':
+        return <Cheese />
+      default:
+        return ''
+    }
   }
 
   render() {
@@ -24,13 +33,13 @@ class App extends Component {
 
         <div>
           Header Placeholder 80% Vegan
-          <h5>Meat</h5>
-          <h5>Dairy (Milk)</h5>
-          <h5>Cheese</h5>
+          <h5 onClick={e => this.setState( {currentSelection: e.target.innerText} )}>Meat</h5>
+          <h5 onClick={e => this.setState( {currentSelection: e.target.innerText} )}>Dairy (Milk)</h5>
+          <h5 onClick={e => this.setState( {currentSelection: e.target.innerText} )}>Cheese</h5>
         </div>
 
         <div>
-        
+          {this.informationDisplay()}
         </div>
 
       </div>
