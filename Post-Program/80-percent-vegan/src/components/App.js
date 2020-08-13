@@ -3,6 +3,8 @@ import Cheese from './Cheese';
 import Meat from './Meat';
 import Dairy from './Dairy';
 
+import 'bootstrap/dist/css/bootstrap.css';
+
 class App extends Component {
   constructor() {
     super();
@@ -30,16 +32,20 @@ class App extends Component {
   render() {
     return (
       <div>
-
         <div>
           Header Placeholder 80% Vegan
-          <h5 onClick={e => this.setState( {currentSelection: e.target.innerText} )}>Meat</h5>
-          <h5 onClick={e => this.setState( {currentSelection: e.target.innerText} )}>Dairy (Milk)</h5>
-          <h5 onClick={e => this.setState( {currentSelection: e.target.innerText} )}>Cheese</h5>
         </div>
+        
+        <div className="row">
+          <div className="col-md-2">
+            <h5 onClick={e => this.setState( {currentSelection: e.target.innerText} )}>Meat</h5>
+            <h5 onClick={e => this.setState( {currentSelection: e.target.innerText} )}>Dairy (Milk)</h5>
+            <h5 onClick={e => this.setState( {currentSelection: e.target.innerText} )}>Cheese</h5>
+          </div>
 
-        <div>
-          {this.informationDisplay()}
+          <div className="col-md-10">
+            {this.informationDisplay()}
+          </div>
         </div>
 
       </div>
