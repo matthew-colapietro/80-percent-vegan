@@ -1,7 +1,7 @@
 {
-  "name": "geotrash",
+  "name": "80percentvegan",
   "version": "1.0.0",
-  "description": "This project focuses on a community reporting tool for trash that can be used by local officials to monitor and their jurisdiction.",
+  "description": "This project is a new, practical dieting website",
   "main": "index.js",
   "scripts": {
     "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client && npm run build --prefix client",
