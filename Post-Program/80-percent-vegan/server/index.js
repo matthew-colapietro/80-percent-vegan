@@ -43,8 +43,4 @@ const port = process.env.PORT || 8000;
 
 app.listen(port)
 // server.listen(port);
-<<<<<<< HEAD
 console.log("Server listening on:", port);
-=======
-console.log("Server listening on:", port);
->>>>>>> 384f7cfcad1cde94f23cb881bc9ccb7ffa81f5e5
