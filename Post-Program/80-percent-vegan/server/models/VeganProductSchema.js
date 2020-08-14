@@ -7,6 +7,7 @@ const VeganProductSchema = new Schema({
   avgPrice: Number,
   productCategory: String,
   productDescription: String,
+  image: String,
 
 })
 

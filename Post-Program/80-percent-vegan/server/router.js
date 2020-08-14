@@ -10,6 +10,7 @@ router.post('/VeganProduct/', (req, res, next) => {
   veganProduct.avgPrice = req.body.avgPrice
   veganProduct.productCategory = req.body.productCategory
   veganProduct.productDescription = req.body.productDescription
+  veganProduct.image = req.body.image
 
 
   veganProduct.save((err) => {
