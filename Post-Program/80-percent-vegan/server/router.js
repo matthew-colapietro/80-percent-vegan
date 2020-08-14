@@ -3,7 +3,7 @@ const { VeganProduct } = require("./models/VeganProductSchema");
 
 //Set up routes
 router.post('/VeganProduct/', (req, res, next) => {
-  //creating new VeganProdcut entry with all parameters from form component
+  //creating new VeganProduct entry with all parameters from form component
   let veganProduct = new VeganProduct()
 
   veganProduct.productName = req.body.productName
